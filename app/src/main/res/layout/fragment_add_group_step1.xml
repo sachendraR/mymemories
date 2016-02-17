@@ -1,0 +1,39 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="innovator.memories.fragments.AddGroupStep1">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <ImageButton
+        android:layout_width="320dp"
+        android:layout_height="320dp"
+        android:id="@+id/imageButton"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="10dp"
+        android:background="@android:color/transparent"
+        android:src="@android:drawable/ic_menu_gallery" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/etGroupName"
+        android:layout_below="@+id/imageButton"
+        android:layout_alignStart="@+id/imageButton"
+        android:layout_marginTop="53dp"
+        android:layout_alignEnd="@+id/imageButton"
+        android:hint="@string/enter_group_name"
+        android:maxLines="1" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/etGroupDetails"
+        android:layout_below="@+id/etGroupName"
+        android:layout_alignStart="@+id/etGroupName"
+        android:layout_alignEnd="@+id/etGroupName"
+        android:layout_marginTop="20dp"
+        android:hint="@string/enter_description" />
+</RelativeLayout>
